@@ -1,0 +1,67 @@
+:root {
+  --back: #C5FFF8;
+  --text: #711DB0;
+  --box: #7B66FF;
+  --bttn: #FFA732;
+  --bttntext: #C5FFF8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--back);
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vh;
+    width: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    background-color: var(--box);
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    font-size: 8vmin;
+    color: var(--bttntext);
+}
+
+.reset-btn, #new-game {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: var(--bttn);
+    color: var(--text);
+    border-radius: 1rem;
+    border: none;
+}
+
+
+.winner-box {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vmin;
+    font-size: 10vmin;
+    color: var(--text);
+}
+
+.hide {
+    display: none;
+}
